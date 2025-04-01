@@ -5,5 +5,7 @@ text = input("Enter text: ")
 # ask the user for suffix
 suffix = input("Enter suffix: ")
 # check if the text ends with the suffix
-# if yes, remove the prefix using slicing
+if text.endswith(suffix):
+    text = text[:-len(suffix)]      # if yes, remove the prefix using slicing
 # print output
+print(text)
