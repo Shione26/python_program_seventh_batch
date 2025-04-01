@@ -5,5 +5,10 @@ text = input("Enter text: ")
 # define lowercase characters
 lowercase = "abcdefghijklmnopqrstuvwxyz"
 # check manually if all characters is on lowercase
-# if no, print False
+for char in text:
+    if char not in lowercase:
+        print("False")  # if no, print False
+        break
 # if yes, print True
+else:
+    print("True")
