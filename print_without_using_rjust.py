@@ -5,5 +5,8 @@ text = str(input("Enter text: "))
 # ask the user for the width
 width = int(input("Enter width: "))
 # compute the number of spaces to be filled at the beginning
+spaces = width - len(text)
 # concatenate the spaces and the text
+result = " " * spaces + text
 # print the result
+print(f"'{result}'")
