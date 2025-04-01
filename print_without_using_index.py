@@ -5,5 +5,8 @@ text = input("Enter text: ")
 # ask the user what word to find
 word = input("Enter word to find: ")
 # using find(), find the first occurence of word in text
-# if not found, print -1
-# otherwise, print position
+result = text.find(word)
+if result == -1:
+    print("-1")     # if not found, print -1
+else:
+    print(result)   # otherwise, print position
